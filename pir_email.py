@@ -2,8 +2,8 @@ import RPi.GPIO as GPIO
 import time
 import smtplib
 
-GMAIL_USER = '************'
-GMAIL_PASS = '************'
+GMAIL_USER = 'betbatesc@gmail.com'
+GMAIL_PASS = 'Agt1992-2035'
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
@@ -16,7 +16,7 @@ def send_email(recipient, subject, text):
 	smtp_server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
 	smtp_server.ehlo()
 	smtp_server.starttls()
-	smtp_server.ehlo
+	# smtp_server.ehlo
 	smtp_server.login(GMAIL_USER, GMAIL_PASS)
 	header = 'To: ' + recipient + '\n' + 'From: ' + GMAIL_USER
 	header += '\n' + 'Subject: ' + subject + '\n'
@@ -34,7 +34,7 @@ while True:
         print("Intruder detected: ", input)
         GPIO.output(18, GPIO.HIGH)  # Turn On led
         time.sleep(5)
-        #send_email('streetball1992@hotmail.com', 'Alert', 'Somebody has broken in your house :O')
+        send_email('streetball1992@hotmail.com', 'Alert', 'Somebody has broken in your house :O')
         
 
 

@@ -11,8 +11,8 @@ while True:
     if input == 0:
         print("No intruders ", input)
         GPIO.output(18, GPIO.LOW)  # Turn Off led
-        time.sleep(0.1)
+        time.sleep(5)
     else:
         print("Intruder detected: ", input)
         GPIO.output(18, GPIO.HIGH)  # Turn On led
-        time.sleep(0.1)
+        time.sleep(5)

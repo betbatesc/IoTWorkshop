@@ -1,11 +1,7 @@
 import RPi.GPIO as GPIO
-
 led_pin = 18
-
 GPIO.setmode(GPIO.BCM)
-
 GPIO.setwarnings(False)
-
 GPIO.setup(18, GPIO.OUT)
 
 # Set frequency to 500 Hz
