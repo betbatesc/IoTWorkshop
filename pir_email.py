@@ -2,8 +2,8 @@ import RPi.GPIO as GPIO
 import time
 import smtplib
 
-GMAIL_USER = 'betbatesc@gmail.com'
-GMAIL_PASS = 'Agt1992-2035'
+GMAIL_USER = ''
+GMAIL_PASS = ''
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 
